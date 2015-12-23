@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Golden Development</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/earlyaccess/tharlon.css">
+	<link rel="stylesheet" href="https://cdn.plyr.io/1.3.7/plyr.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/animate.css"> -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container main-nav">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="/">Golden Development Group</a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse navbar-right" id="main-menu">
+	      <ul class="nav navbar-nav">
+	        <li><a href="/index.html">Home</a></li>
+	        <li><a href="/index.html#eb5">Related EB-5</a></li>
+	        <li><a href="/contact-us.html">Contact Us</a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+	<div class="page-cover">
+		<div class="container">
+			<div class="page-header">
+	  			<h1>Contact Us</h1>
+			</div>
+		</div>
+	</div>
+
+	<div class="body">
+		<div id="video" class="video-block block">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col">
+						<div class="row">
+							<div class="col-md-10 col-md-offset-2">
+								<div class="row">
+									<div class="col-md-2">
+										<i class="glyphicon glyphicon-map-marker big-icon"></i>
+									</div>
+									<div class="col-md-10">
+										<address class="contact-page-address">Room 715, 7<sup>th</sup> Floor, Sule Shangri-la Hotel, Sule Pagoda Road, Yangon</address>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-2">
+										<i class="glyphicon glyphicon-phone-alt big-icon"></i>
+									</div>
+									<div class="col-md-10">
+										<p class="contact-page-phone">09 788239551, 09 43117192, 09 5182650, 09 421073774, 09 798199430</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-2">
+										<i class="glyphicon glyphicon-envelope big-icon"></i>
+									</div>
+									<div class="col-md-10">
+									<dl class="contact-page-emails">
+									  	<dt>General Inquiry</dt>
+									  	<dd>golden@goldendevelopmentgroup.com</dd>
+									  	<hr>
+									  	<dt>Sales</dt>
+								  		<dd>sales@goldendevelopmentgroup.com</dd>
+								  		<hr>
+								  		<dt>Head of Business Development</dt>
+								  		<dd>headofbiz@goldendevelopmentgroup.com</dd>
+									</dl>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div id="map-canvas" style="width: 100%; height: 400px"></div>
+						<script src="https://maps.googleapis.com/maps/api/js"></script>
+						<script type="text/javascript">
+						        // When the window has finished loading create our google map below
+						        google.maps.event.addDomListener(window, 'load', init);
+						    
+						        function init() {
+						            // Basic options for a simple Google Map
+						            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+						            var mapOptions = {
+						                // How zoomed in you want the map to start at (always required)
+						                zoom: 17,
+						                scrollwheel: false,
+						                // The latitude and longitude to center the map (always required)
+						                center: new google.maps.LatLng(16.7789032,96.1585075), // New York
+
+						                // How you would like to style the map. 
+						                // This is where you would paste any style found on Snazzy Maps.
+						                styles: [{"featureType":"landscape","stylers":[{"hue":"#FFAD00"},{"saturation":50.2},{"lightness":-34.8},{"gamma":1}]},{"featureType":"road.highway","stylers":[{"hue":"#FFAD00"},{"saturation":-19.8},{"lightness":-1.8},{"gamma":1}]},{"featureType":"road.arterial","stylers":[{"hue":"#FFAD00"},{"saturation":72.4},{"lightness":-32.6},{"gamma":1}]},{"featureType":"road.local","stylers":[{"hue":"#FFAD00"},{"saturation":74.4},{"lightness":-18},{"gamma":1}]},{"featureType":"water","stylers":[{"hue":"#00FFA6"},{"saturation":-63.2},{"lightness":38},{"gamma":1}]},{"featureType":"poi","stylers":[{"hue":"#FFC300"},{"saturation":54.2},{"lightness":-14.4},{"gamma":1}]}] };
+
+						            // Get the HTML DOM element that will contain your map 
+						            // We are using a div with id="map" seen below in the <body>
+						            var mapElement = document.getElementById('map-canvas');
+
+						            // Create the Google Map using our element and options defined above
+						            var map = new google.maps.Map(mapElement, mapOptions);
+
+						            // Let's also add a marker while we're at it
+						            var marker = new google.maps.Marker({
+						                position: new google.maps.LatLng(16.7789032,96.1585075),
+						                map: map,
+						                title: 'Biznet',
+						                icon: '/img/map-pointer.png'
+						            });
+						        }
+						    </script>
+							   
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<footer class="main-footer container-fluid">
+			<div class="row">
+				<div class="col-md-6">
+					<small>copyright &copy; Golden Development Group 2015</small>
+				</div>
+				<div class="powered-by col-md-6 text-right">
+					<small>Powered by <a href="http://biznet.com.mm" class="biznet" target="_blank">Biznet</a></small>
+				</div>
+			</div>
+		</footer>
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/wow.min.js"></script>
+		<script>
+        (function() {
+            new WOW().init();
+        })();
+        </script>
+</body>
+</html>

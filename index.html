@@ -8,6 +8,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/earlyaccess/tharlon.css">
 	<link rel="stylesheet" href="https://cdn.plyr.io/1.3.7/plyr.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/animate.css"> -->
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -20,15 +21,15 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand" href="#">Golden Development Group</a>
+	      <a class="navbar-brand" href="/">Golden Development Group</a>
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse navbar-right" id="main-menu">
 	      <ul class="nav navbar-nav">
-	        <li><a href="#">Home</a></li>
-	        <li><a href="#eb5">Related EB-5</a></li>
-	        <li><a href="#">Contact Us</a></li>
+	        <li><a href="/index.html">Home</a></li>
+	        <li><a href="/index.html#eb5">Related EB-5</a></li>
+	        <li><a href="/contact-us.html">Contact Us</a></li>
 	      </ul>
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
@@ -72,7 +73,7 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col col-md-8  col-md-push-4">
-						<h1>Related EB-5 Program</h1>
+						<h1 class="wow fadeIn">Related EB-5 Program</h1>
 						<h4>Advantages of Investment</h4>
 						<hr class="hidden-xs">
 						<div class="visible-xs">
@@ -181,6 +182,7 @@
 		<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 		<script src="https://cdn.plyr.io/1.3.7/plyr.js"></script>
+		<script type="text/javascript" src="js/wow.min.js"></script>
 		<script>
         (function() {
             [
@@ -215,6 +217,9 @@
                 }
             });
             plyr.setup();
+
+            new WOW().init();
+
         })();
         </script>
 </body>

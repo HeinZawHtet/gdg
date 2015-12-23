@@ -194,6 +194,13 @@ p {
 	font-size: 16px;
 	font-weight: 400;
 }
+.big-icon {
+	padding: 20px;
+	display: inline-block;
+	border: 1px solid #e3e3e3;
+	font-size: 40px;
+	color: #e3e3e3;
+}
 .first-letter-up {
 	position: relative;
 }
@@ -206,7 +213,6 @@ p {
 }
 .page-cover {
 	background: #313e5c;
-	margin-bottom: 30px;
 }
 .page-header {
 	padding-top: 100px;
@@ -319,7 +325,7 @@ p {
 	display: inline-block;
 	position: absolute;
 	left: -40px;
-	z-index: 9999;
+	z-index: 1;
 }
 .video-block .block-title {
 	font-size: 50px;
@@ -380,6 +386,19 @@ p {
 }
 .biznet {
 	color: #ef264d;
+}
+.contact-page-address,.contact-page-phone {
+	font-size: 20px;
+	margin-top: 14px;
+	margin-bottom: 20px;
+}
+.contact-page-emails {
+	margin-top: 14px;
+	margin-bottom: 20px;
+}
+.contact-page-emails hr {
+	margin-top: 8px;
+	margin-bottom: 8px;
 }
 @media only screen and (max-width : 992px) {
 	.eb5-block .col-big:first-child .list {
