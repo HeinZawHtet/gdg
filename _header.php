@@ -41,13 +41,13 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Related EB-5 Program <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="/manhattan-tower.php">Manhattan Tower</a></li>
-                <li><a href="#">Hudson Yard</a></li>
-                <li><a href="#">Letters of Approval</a></li>
+                <li><a href="/manhattan-tower.html">Manhattan Tower</a></li>
+                <li><a href="/hudson-yards.html">Hudson Yards</a></li>
+                <li><a href="/letters-of-approval.html">Letters of Approval</a></li>
               </ul>
             </li>
             <!-- <li><a href="#">About Us</a></li> -->
-            <li><a href="/contact.php">Contact Us</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->

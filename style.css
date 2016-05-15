@@ -21,8 +21,11 @@ p {
 .margin-bottom {
     margin-bottom: 20px;
 }
+.margin-top {
+    margin-top: 20px;
+}
 .site-list li {
-    line-height: 28px;
+    margin-bottom: 14px;
 }
 .bullet-list li {
     position: relative;
@@ -63,7 +66,7 @@ p {
     font-size: 16px;
     margin-top: 12px;
 }
-.main-nav .navbar-nav > li > a:hover {
+.main-nav .navbar-nav > li > a:hover,.main-nav .navbar-nav > li > a:focus {
     color: #fff;
 }
 .main-nav .navbar-brand {
@@ -704,4 +707,14 @@ h3.section-title {
     font-size: 40px;
     display: block;
     color: #999;
+}
+@media (max-width: 599px) {
+    .label-item h3 {
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        font-size: 20px;
+        padding-top: 30px;
+        line-height: 22px;
+    }
 }

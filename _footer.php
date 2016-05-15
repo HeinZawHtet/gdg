@@ -6,12 +6,12 @@
               <li role="presentation"><strong>Company:</strong></li>
               <li role="presentation"><a href="/">Home</a></li>
               <!-- <li role="presentation"><a href="#">About Us</a></li> -->
-              <li role="presentation"><a href="/contact.php">Contact Us</a></li>
+              <li role="presentation"><a href="/contact.html">Contact Us</a></li>
             </ul>
             <ul class="nav nav-pills">
               <li role="presentation"><strong>Related EB-5:</strong></li>
               <li role="presentation"><a href="#">Overview</a></li>
-              <li role="presentation"><a href="/manhattan-tower.php">Manhattan Tower</a></li>
+              <li role="presentation"><a href="/manhattan-tower.html">Manhattan Tower</a></li>
               <li role="presentation"><a href="#">Hudson Yard</a></li>
             </ul>
             <ul class="nav nav-pills">
@@ -34,6 +34,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="lib/no-ui-slider/jquery.nouislider.min.js"></script>
     <script src="lib/headroom.js"></script>
+    <script src="lib/ekko-lightbox.min.js"></script>
     <script type="text/javascript">
 
     var header = document.querySelector(".main-nav");
@@ -41,6 +42,13 @@
             offset: '40'
         });
         headroom.init();
+
+    $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox({
+            scale_height: false
+        });
+    }); 
     /**
     *
     * heading slider
