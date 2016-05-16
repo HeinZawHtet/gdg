@@ -11,6 +11,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="lib/animate.css" rel="stylesheet">
     <link href="lib/no-ui-slider/jquery.nouislider.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/earlyaccess/notosansmyanmar.css' rel='stylesheet' type='text/css'>
     <link href="/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->

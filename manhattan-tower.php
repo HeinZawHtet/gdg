@@ -11,6 +11,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="lib/animate.css" rel="stylesheet">
     <link href="lib/no-ui-slider/jquery.nouislider.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/earlyaccess/notosansmyanmar.css' rel='stylesheet' type='text/css'>
     <link href="/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -54,35 +56,35 @@
     </nav>
 
   <div class="main-slider">
-    
+
         <div class="heading-slides">
-        
+
             <div class="heading-slide-single" data-slide-id="1" style="background-image: url( '/img/tower-1.jpg' );">
-                
+
                 <div class="heading-content">
-                    
+
                     <h2>Manhattan Tower</h2>
                     <!-- <h3>We believe no other EB-5 program can match ours</h3> -->
-                    
+
                     <a class="round-btn btn-primary btn"><i class="glyphicon glyphicon-chevron-down"></i></a>
-        
+
                 </div>
-            
+
             </div>
-            
+
             <div class="heading-slide-single" data-slide-id="2" style="background-image: url( '/img/tower-2.jpg' );">
-                
+
                 <div class="heading-content">
-                    
+
                     <h2>Manhattan Tower</h2>
                     <!-- <h3>We believe no other EB-5 program can match ours</h3> -->
-                    
+
                     <a class="btn-primary btn">Learn More <i class="fa fa-chevron-right"></i></a>
-        
+
                 </div>
-            
+
             </div>
-        
+
         </div>
 
     </div>
@@ -151,7 +153,7 @@
               </div>
           </div>
           <div class="text-center">
-            <a href="#" class="btn btn-link"><span class="glyphicon glyphicon-plus"></span> View Capital Sources Structure</a>
+            <a href="img/manhattan-project-sources.jpg" data-toggle="lightbox" data-title="Capital Sources Structure"><span class="glyphicon glyphicon-plus"></span> View Capital Sources Structure</a>
           </div>
         </div>
         <!-- <div class="col-md-6">
@@ -215,223 +217,223 @@
 
       </div>
     </section>
-<footer class="main-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8">
-            <ul class="nav nav-pills">
-              <li role="presentation"><strong>Company:</strong></li>
-              <li role="presentation"><a href="/">Home</a></li>
-              <!-- <li role="presentation"><a href="#">About Us</a></li> -->
-              <li role="presentation"><a href="/contact.html">Contact Us</a></li>
-            </ul>
-            <ul class="nav nav-pills">
-              <li role="presentation"><strong>Related EB-5:</strong></li>
-              <li role="presentation"><a href="#">Overview</a></li>
-              <li role="presentation"><a href="/manhattan-tower.html">Manhattan Tower</a></li>
-              <li role="presentation"><a href="#">Hudson Yard</a></li>
-            </ul>
-            <ul class="nav nav-pills">
-              <li role="presentation"><strong>Sub:</strong></li>
-              <li role="presentation"><a href="http://goldenboutique.net" target="_blank">Golden Boutique</a></li>
-            </ul>
+    <footer class="main-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8">
+                <ul class="nav nav-pills">
+                  <li role="presentation"><strong>Company:</strong></li>
+                  <li role="presentation"><a href="/">Home</a></li>
+                  <!-- <li role="presentation"><a href="#">About Us</a></li> -->
+                  <li role="presentation"><a href="/contact.html">Contact Us</a></li>
+                </ul>
+                <ul class="nav nav-pills">
+                  <li role="presentation"><strong>Related EB-5:</strong></li>
+                  <li role="presentation"><a href="#">Overview</a></li>
+                  <li role="presentation"><a href="/manhattan-tower.html">Manhattan Tower</a></li>
+                  <li role="presentation"><a href="#">Hudson Yard</a></li>
+                </ul>
+                <ul class="nav nav-pills">
+                  <li role="presentation"><strong>Sub:</strong></li>
+                  <li role="presentation"><a href="http://goldenboutique.net" target="_blank">Golden Boutique</a></li>
+                </ul>
+              </div>
+              <div class="copyright col-md-4 text-right">
+                <small>Website is prodly powered by <a href="http://biznet.com.mm" target="_blank">Biznet</a></small>
+                <br>
+                <small>copyright &copy; 2016 Golden Development Group</small>
+              </div>
+            </div>
           </div>
-          <div class="copyright col-md-4 text-right">
-            <small>Website is prodly powered by <a href="http://biznet.com.mm" target="_blank">Biznet</a></small>
-            <br>
-            <small>copyright &copy; 2016 Golden Development Group</small>
-          </div>
-        </div>
-      </div>
-    </footer>
+        </footer>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="lib/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="lib/no-ui-slider/jquery.nouislider.min.js"></script>
-    <script src="lib/headroom.js"></script>
-    <script src="lib/ekko-lightbox.min.js"></script>
-    <script type="text/javascript">
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="lib/jquery.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="lib/no-ui-slider/jquery.nouislider.min.js"></script>
+        <script src="lib/headroom.js"></script>
+        <script src="lib/ekko-lightbox.min.js"></script>
+        <script type="text/javascript">
 
-    var header = document.querySelector(".main-nav");
-        var headroom = new Headroom(header, {
-            offset: '40'
+        var header = document.querySelector(".main-nav");
+            var headroom = new Headroom(header, {
+                offset: '40'
+            });
+            headroom.init();
+
+        $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox({
+                scale_height: false
+            });
         });
-        headroom.init();
+        /**
+        *
+        * heading slider
+        *
+        */
+        $('[data-toggle="tooltip"]').tooltip();
 
-    $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
-        event.preventDefault();
-        $(this).ekkoLightbox({
-            scale_height: false
-        });
-    }); 
-    /**
-    *
-    * heading slider
-    *
-    */                      
-    $('[data-toggle="tooltip"]').tooltip();
-    
-    $.martanianHeadingSlider = function() {
-                  
-        var currentHeadingSlideID = 1;
-        setInterval( function() {
-        
-            $.martanianHideSlide( currentHeadingSlideID );
+        $.martanianHeadingSlider = function() {
+
+            var currentHeadingSlideID = 1;
+            setInterval( function() {
+
+                $.martanianHideSlide( currentHeadingSlideID );
+                setTimeout( function() {
+
+                    currentHeadingSlideID = currentHeadingSlideID == 1 ? 2 : 1;
+                    $.martanianShowSlide( currentHeadingSlideID );
+
+                }, 400 );
+
+            }, 5000 );
+
+        };
+
+       /**
+        *
+        * function hide single heading slide
+        *
+        */
+
+        $.martanianHideSlide = function( slideID ) {
+
+            var currentSlide = $( '.main-slider .heading-slide-single[data-slide-id="'+ slideID +'"]' );
+
+            currentSlide.children( '.flying-1' ).addClass( 'animated bounceOutLeft' );
+            currentSlide.children( '.flying-2' ).addClass( 'animated bounceOutRight' );
+
             setTimeout( function() {
-            
-                currentHeadingSlideID = currentHeadingSlideID == 1 ? 2 : 1;
-                $.martanianShowSlide( currentHeadingSlideID );
-            
+
+                currentSlide.children( '.flying-1' ).removeClass( 'animated bounceOutLeft' ).hide();
+                currentSlide.children( '.flying-2' ).removeClass( 'animated bounceOutRight' ).hide();
+
+                currentSlide.children( '.heading-content' ).addClass( 'animated fadeOutUp' );
+                currentSlide.addClass( 'animated fadeOut' );
+
+                setTimeout( function() {
+
+                    currentSlide.children( '.heading-content' ).removeClass( 'animated fadeOutUp' ).hide();
+                    currentSlide.removeClass( 'animated fadeOut' ).hide();
+
+                }, 800 );
+
             }, 400 );
 
-        }, 5000 );
+        };
 
-    };
-    
-   /**
-    *
-    * function hide single heading slide
-    *
-    */                
-    
-    $.martanianHideSlide = function( slideID ) {
+       /**
+        *
+        * function show single heading slide
+        *
+        */
 
-        var currentSlide = $( '.main-slider .heading-slide-single[data-slide-id="'+ slideID +'"]' );
-        
-        currentSlide.children( '.flying-1' ).addClass( 'animated bounceOutLeft' );
-        currentSlide.children( '.flying-2' ).addClass( 'animated bounceOutRight' );
-        
-        setTimeout( function() {
-        
-            currentSlide.children( '.flying-1' ).removeClass( 'animated bounceOutLeft' ).hide();
-            currentSlide.children( '.flying-2' ).removeClass( 'animated bounceOutRight' ).hide();
-        
-            currentSlide.children( '.heading-content' ).addClass( 'animated fadeOutUp' ); 
-            currentSlide.addClass( 'animated fadeOut' );
-            
+        $.martanianShowSlide = function( slideID ) {
+
+            var currentSlide = $( '.main-slider .heading-slide-single[data-slide-id="'+ slideID +'"]' );
+
+            currentSlide.children( '.flying-1' ).hide();
+            currentSlide.children( '.flying-2' ).hide();
+            currentSlide.children( '.heading-content' ).hide();
+
+            currentSlide.addClass( 'animated fadeIn' ).show();
+
             setTimeout( function() {
 
-                currentSlide.children( '.heading-content' ).removeClass( 'animated fadeOutUp' ).hide(); 
-                currentSlide.removeClass( 'animated fadeOut' ).hide();
-            
-            }, 800 );
-        
-        }, 400 );
+                currentSlide.children( '.flying-1' ).addClass( 'animated bounceInLeft' ).show();
+                currentSlide.children( '.flying-2' ).addClass( 'animated bounceInRight' ).show();
 
-    };  
-    
-   /**
-    *
-    * function show single heading slide
-    *
-    */ 
-    
-    $.martanianShowSlide = function( slideID ) {
-
-        var currentSlide = $( '.main-slider .heading-slide-single[data-slide-id="'+ slideID +'"]' );
-        
-        currentSlide.children( '.flying-1' ).hide();
-        currentSlide.children( '.flying-2' ).hide();
-        currentSlide.children( '.heading-content' ).hide();
-        
-        currentSlide.addClass( 'animated fadeIn' ).show();
-        
-        setTimeout( function() {
-        
-            currentSlide.children( '.flying-1' ).addClass( 'animated bounceInLeft' ).show(); 
-            currentSlide.children( '.flying-2' ).addClass( 'animated bounceInRight' ).show();
-            
-            setTimeout( function() {
-
-                currentSlide.children( '.heading-content' ).addClass( 'animated fadeInDown' ).show();
                 setTimeout( function() {
-                
-                    currentSlide.removeClass( 'animated fadeIn' );
-                    currentSlide.children( '.flying-1' ).removeClass( 'animated bounceInLeft' ); 
-                    currentSlide.children( '.flying-2' ).removeClass( 'animated bounceInRight' );
-                    currentSlide.children( '.heading-content' ).removeClass( 'animated fadeInDown' );
-                
-                }, 1000 );
-            
-            }, 400 ); 
-        
-        }, 400 );
-        
-    };
-    
-   /**
-    *
-    * configure image slider
-    *
-    */                
-    
-    $.martanianConfigureImageSlider = function() {
-    
-        $( '.about-us .right .images-slider' ).each( function() {
-        
-            var slider = $( this );
-            var slideID = 1;
-            
-            slider.children( '.images-slider-single' ).each( function() {
-            
-                $( this ).attr( 'data-slide-id', slideID );
-                slideID++;
-            
+
+                    currentSlide.children( '.heading-content' ).addClass( 'animated fadeInDown' ).show();
+                    setTimeout( function() {
+
+                        currentSlide.removeClass( 'animated fadeIn' );
+                        currentSlide.children( '.flying-1' ).removeClass( 'animated bounceInLeft' );
+                        currentSlide.children( '.flying-2' ).removeClass( 'animated bounceInRight' );
+                        currentSlide.children( '.heading-content' ).removeClass( 'animated fadeInDown' );
+
+                    }, 1000 );
+
+                }, 400 );
+
+            }, 400 );
+
+        };
+
+       /**
+        *
+        * configure image slider
+        *
+        */
+
+        $.martanianConfigureImageSlider = function() {
+
+            $( '.about-us .right .images-slider' ).each( function() {
+
+                var slider = $( this );
+                var slideID = 1;
+
+                slider.children( '.images-slider-single' ).each( function() {
+
+                    $( this ).attr( 'data-slide-id', slideID );
+                    slideID++;
+
+                });
+
+                slider.attr( 'data-active-slide-id', 1 );
+                slider.attr( 'data-slides-count', slideID - 1 );
+
             });
-            
-            slider.attr( 'data-active-slide-id', 1 );
-            slider.attr( 'data-slides-count', slideID - 1 );
-        
-        });
-    
-    };
 
-    $.martanianConfigureInsuranceSlider = function() {
-    
-        if( windowWidth > 1332 ) {
+        };
 
-            var padding = 75;
-            var height = 'math';
-        }
-        
-        else if( windowWidth > 932 ) {
+        $.martanianConfigureInsuranceSlider = function() {
 
-            var padding = 50;
-            var height = 'math';
-        }
-        
-        else {
-        
-            var padding = 50;
-            var height = 300;
-        }
-        
-        $( '.insurances-slider' ).each( function() {
-        
-            var slider = $( this ).children( '.center' );
-            var descriptions = slider.children( '.content' ).children( '.descriptions' );
-            var activeInsurance = slider.children( '.content' ).children( '.tabs' ).children( 'li.active' ).data( 'insurance-key' );
-            
-            if( typeof activeInsurance == 'undefined' || activeInsurance === false ) {
-            
-                activeInsurance = slider.children( '.content' ).children( '.tabs' ).children( 'li' ).first().data( 'insurance-key' );
-                slider.children( '.content' ).children( '.tabs' ).children( 'li' ).first().addClass( 'active' );
+            if( windowWidth > 1332 ) {
+
+                var padding = 75;
+                var height = 'math';
             }
 
-            descriptions.children( '.description[data-insurance-key="'+ activeInsurance +'"]' ).show();
-            descriptions.css({ 'height': descriptions.children( '.description[data-insurance-key="'+ activeInsurance +'"]' ).height() });
+            else if( windowWidth > 932 ) {
 
-            slider.children( '.images' ).children( '.image[data-insurance-key="'+ activeInsurance +'"]' ).show();
-            
-            if( height == 'math' ) height = slider.children( '.content' ).height() + padding;
-            slider.children( '.images' ).css({ 'height': height });
-        
-        });
+                var padding = 50;
+                var height = 'math';
+            }
 
-    }; 
-    $.martanianHeadingSlider();   
-    </script>
-  </body>
-</html>
+            else {
+
+                var padding = 50;
+                var height = 300;
+            }
+
+            $( '.insurances-slider' ).each( function() {
+
+                var slider = $( this ).children( '.center' );
+                var descriptions = slider.children( '.content' ).children( '.descriptions' );
+                var activeInsurance = slider.children( '.content' ).children( '.tabs' ).children( 'li.active' ).data( 'insurance-key' );
+
+                if( typeof activeInsurance == 'undefined' || activeInsurance === false ) {
+
+                    activeInsurance = slider.children( '.content' ).children( '.tabs' ).children( 'li' ).first().data( 'insurance-key' );
+                    slider.children( '.content' ).children( '.tabs' ).children( 'li' ).first().addClass( 'active' );
+                }
+
+                descriptions.children( '.description[data-insurance-key="'+ activeInsurance +'"]' ).show();
+                descriptions.css({ 'height': descriptions.children( '.description[data-insurance-key="'+ activeInsurance +'"]' ).height() });
+
+                slider.children( '.images' ).children( '.image[data-insurance-key="'+ activeInsurance +'"]' ).show();
+
+                if( height == 'math' ) height = slider.children( '.content' ).height() + padding;
+                slider.children( '.images' ).css({ 'height': height });
+
+            });
+
+        };
+        $.martanianHeadingSlider();
+        </script>
+      </body>
+    </html>
