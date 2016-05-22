@@ -45,7 +45,6 @@
               <ul class="dropdown-menu">
                 <li><a href="/manhattan-tower.html">Manhattan Tower</a></li>
                 <li><a href="/hudson-yards.html">Hudson Yards</a></li>
-                <li><a href="/letters-of-approval.html">Letters of Approval</a></li>
               </ul>
             </li>
             <!-- <li><a href="#">About Us</a></li> -->
